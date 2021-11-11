@@ -10,17 +10,17 @@ public class Main {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
 
-        //Adding text, text area and buttons
+        //Side x text
         JLabel sideXText = new JLabel("Enter side x");
-        TextArea x = new TextArea();
-
-        //Fonts and size
         sideXText.setFont(new Font("Ink Free", 2, 28));
+        panel.add(sideXText);
 
+        //side x text area
+        JTextField x = new JTextField();
+        x.setBounds(100, 50, 200, 30);
+        panel.add(x);
 
         panel.setLayout(new FlowLayout(FlowLayout.LEFT));
-        panel.add(sideXText);
-        panel.add(x);
         frame.add(panel);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
